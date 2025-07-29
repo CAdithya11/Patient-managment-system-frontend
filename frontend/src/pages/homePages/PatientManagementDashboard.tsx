@@ -17,7 +17,6 @@ import {
   Shield,
   TrendingUp,
   Filter,
-  MoreVertical,
 } from 'lucide-react';
 
 // Types based on your API structure
@@ -394,7 +393,7 @@ const PatientManagement: React.FC = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100/50">
-                {paginatedPatients.map((patient, index) => (
+                {paginatedPatients.map((patient) => (
                   <tr
                     key={patient.id}
                     className="hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-purple-50/50 transition-all duration-300 group"
